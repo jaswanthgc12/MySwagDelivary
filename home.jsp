@@ -21,15 +21,15 @@
             border: 1px solid #ccc;
             margin: 10px;
             padding: 10px;
-            width: 300px; /* Fixed width for each restaurant */
+            width: 300px; 
             float: left;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             border-radius: 8px;
-            transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+            transition: transform 0.3s ease-in-out; 
         }
         .restaurant:hover {
-            transform: translateY(-5px); /* Move up on hover */
+            transform: translateY(-5px); 
         }
         .restaurant h3 {
             margin-top: 0;
@@ -38,14 +38,14 @@
             margin-bottom: 5px;
         }
         .restaurant img {
-            width: 100%; /* Full width within the container */
-            height: 150px; /* Fixed height for all images */
-            object-fit: cover; /* Maintain aspect ratio and cover container */
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover; 
             border-radius: 8px 8px 0 0;
-            transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+            transition: transform 0.3s ease-in-out; 
         }
         .restaurant:hover img {
-            transform: scale(1.1); /* Zoom in on hover */
+            transform: scale(1.1); 
         }
         .header {
             display: flex;
@@ -94,7 +94,7 @@
                 <p>Cuisine: <%= restaurant.getCuisineType() %></p>
                 <p>Delivery Time: <%= restaurant.getDeliveryTime() %> minutes</p>
                 <p>Rating: <%= restaurant.getRating() %></p>
-                <a href="Menu?restaurantId=<%= restaurant.getRestaurantId() %>">View Menu</a>
+                <a href="Menu?restaurentId=<%= restaurant.getRestaurantId() %>">View Menu</a>
             </div>
         <% } %>
     </div>
